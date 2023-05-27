@@ -1,0 +1,7 @@
+.ads_body{width:100%; height:100%; background:none;display:flex; align-items: center; justify-content: center;}
+.ads_item{width:350px; height:250px;background: rgb(0, 0, 0);display:flex; align-items: center; justify-content: center;color: #fff; }
+
+.ads1_body{width:100%; height:100%; background:none;display:flex; align-items: center;  flex-direction: column;}
+
+.ads1_item{width:100%; height:auto;;display:flex; align-items: center; justify-content: center; flex-direction: column; } 
+.item{width:100%; height:120px;background: rgb(0, 0, 0);margin-bottom: 10px;}

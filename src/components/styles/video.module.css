@@ -1,0 +1,100 @@
+.tech_body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_cont {
+  width: 100%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  background: none;
+  gap: 5px;
+}
+.post_item {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.post_item1 {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background:none;
+}
+.post_item1 > video {
+  width: 100%;
+  height: 100%;
+}
+
+.action {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(229, 166, 236);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.318);
+  justify-content: center;
+  cursor: pointer;z-index: 20; transition: 0.2s ease-in-out;visibility: hidden;
+}
+.show_action{transition: 0.2s ease-in-out;visibility: visible;}
+
+.action_icon1 { 
+  color: rgb(229, 166, 236);cursor:pointer;position:absolute;display:none
+}
+.action_icon2 {
+  color: rgb(229, 166, 236);cursor:pointer;position:absolute
+}
+
+.show_pause{display:flex}
+.hide_play{display:none}
+
+.post_item2 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.post_item2 > h3 {
+  margin-left: 15px;
+  font-size: 11px;
+  margin-bottom: 0;font-family:Mitr;
+  font-weight:normal
+}
+.post_item2 > h3>a{text-decoration:none; color:black}
+.post_item2 > p {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(162, 162, 165);
+}
+
+
+/* -----responsiveness */
+@media screen and (max-width:420px){
+  .post_cont {
+  width: 100%;
+  height: auto;
+  display: flex; 
+  flex-direction:column}
+  .post_item {
+    width:100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height:300px
+}
+}
+
+
+

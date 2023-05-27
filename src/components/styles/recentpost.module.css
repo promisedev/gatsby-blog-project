@@ -1,0 +1,17 @@
+.post_body{width: 100%; height: auto; display:flex; flex-direction: column;}
+
+.post_cont{width:100%; height: auto; display:flex; flex-direction: column; margin-top: 20px; background-color: none;margin-bottom: 20px;}
+
+.post_modal{width:100%; height: auto; display:flex; flex-direction:column}
+.post_control{width:100%; height:20px; display:flex; }
+.post_tag{display:flex; padding: 6px; background:rgb(181, 111, 208);margin-left: 9px; align-items: center; justify-content: center;border-radius: 3px;color:#fff; cursor: pointer;}
+.active_tag{background:rgb(102, 53, 121)}
+.inactive_tag{background:rgb(181, 111, 208)}
+.post_card{width:100%; height:200px; margin-bottom: 20px;}
+ 
+@media screen and (max-width:420px){
+ .post_card{height:450px}  
+  .post_control{margin-top:30px}
+}
+
+

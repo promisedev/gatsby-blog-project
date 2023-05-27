@@ -1,0 +1,5 @@
+.title_body{width: 100%; display: flex; align-items: center;}
+.title_txt{display:flex; align-items: center;text-transform:uppercase;}
+.title_txt>span{display:flex; padding: 5px; background: rgb(16, 0, 22);margin-right: 5px;}
+
+.title_line{flex:1; height: 3px; background: rgb(130, 130, 143); margin-left: 5px;}

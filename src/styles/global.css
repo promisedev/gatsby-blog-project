@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular One');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka One');
+@import url('https://fonts.googleapis.com/css2?family=Lilita One');
+@import url('https://fonts.googleapis.com/css2?family=Russo One');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva One');
+@import url('https://fonts.googleapis.com/css2?family=Candal');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth');
+@import url('https://fonts.googleapis.com/css2?family=Tilt Warp');
+@import url('https://fonts.googleapis.com/css2?family=Achivo Black');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar');
+@import url('https://fonts.googleapis.com/css2?family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Mitr');
+
+
+
+body{
+    background: #fff;margin: 0; font-family: karla; 
+}
+
+.post_section{width: 90%; height: auto; display:flex; margin-top: 30px;}
+.section1{width:65%; height: auto;}
+.section2{width: 32%; height:auto; margin-left: 30px; background-color: none;}
+
+/* responsive-------------------- */
+
+@media screen and (max-width:420px){
+    .post_section{flex-direction: column;}
+    .section1{width:100%;}
+    .section2{width:100%;margin:0}
+}
+
+

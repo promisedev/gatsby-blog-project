@@ -1,0 +1,16 @@
+
+[
+   {"name":"home", "slug":""},
+{"name":"about", "slug":"about"},
+{"name":"contact", "slug":"contact"},
+{"name":"advertise", "slug":"promotion"},
+{"name":"blogs", "slug":"", "pages":[
+ {"name":"news", "slug":"news"},
+{"name":"lifestyle", "slug":"lifestyle"},
+{"name":"technology", "slug":"technology"},
+{"name":"business", "slug":"business"}   
+]}
+
+    
+    
+]

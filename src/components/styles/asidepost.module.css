@@ -1,0 +1,17 @@
+
+.post_body{width: 100%; height: auto; display:flex; flex-direction: column;}
+
+.post_cont{width:100%; height: 300px; display:flex; flex-direction: column; margin-top: 20px;}
+.post_cont1{width:100%; height: auto; display:flex; flex-direction: column; margin-top: 20px;}
+
+.post_item{width: 100%; height: 90px; background-color: none; margin-bottom: 20px;}
+.post_item1{width: 100%; height: 90px; background-color: none; margin-bottom: 20px;}
+
+
+
+/* -----------------responsive */
+
+
+@media screen and (max-width:420px){
+.post_body{background:none; margin-top: 20px;} 
+}
