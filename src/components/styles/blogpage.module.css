@@ -1,8 +1,22 @@
 .post_section{width: 90%; height: auto; display:flex; margin-top: 30px;}
+
 .section1{width:65%; height: auto;}
 .section2{width: 32%; height:auto; margin-left: 30px; background-color: none; display:flex; flex-direction:column}
-.aside_one{}
+.aside_one{} 
 .aside_two{}
 .aside_three{margin-top: 30px;}
 .aside_four{}
-.aside_five{}
+.aside_five{}  
+
+@media screen and (max-width:720px){
+  .post_section{width: 90%; height: auto; display:flex; flex-direction:column;margin-top: 30px; background-color: none}  
+
+  .section1{width:100%; height: auto;}
+.section2{width: 100%; height:auto; margin-left: 0px; background-color: none; display:flex; flex-direction:column}
+
+.aside_one{width:100%} 
+.aside_two{width:100%; margin-top: 30px;}
+.aside_three{margin-top: 30px;}
+.aside_four{width:100%}
+.aside_five{width:100%}
+}

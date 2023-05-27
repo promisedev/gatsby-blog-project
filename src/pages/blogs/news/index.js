@@ -5,7 +5,7 @@ import {graphql} from "gatsby"
 const News = ({data}) => {
   return (
     <Layout>
-      <Blogpage title="news" data={data} />
+      <Blogpage title="news" data={data} /> 
     </Layout>
   );
 };

@@ -33,7 +33,7 @@ const Home=()=> {
           {/* **********left */}
           <article className="section1">
             <Technology />
-            {/* ----------------------------- */}
+            {/* ----------------------------- */ }
           </article>
           {/* ******************right*/}
           <article className="section2">

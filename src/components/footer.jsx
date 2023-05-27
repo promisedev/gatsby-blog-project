@@ -64,7 +64,7 @@ const [preview,setPreview]=useState([])
      })
      .filter((edge, index) => {
        if (index == arr[0] || index == arr[1] || index == arr[2]) {
-         console.log(edge);
+         //console.log(edge);
          return edge;
        }
      });

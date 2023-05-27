@@ -11,4 +11,4 @@ const Ads =()=>{
 </section>
     )
 }
-export default Ads
+export default Ads 

@@ -8,7 +8,7 @@ import {
   aside_three,
   aside_four,
   aside_five,
-} from "./styles/blogpage.module.css";
+} from "./styles/blogpage.module.css"; 
 import Blogpost from "./blogpost";
 import Popularpost from "./asidepost";
 import Videopost from "./asidepost1";
@@ -18,8 +18,8 @@ const Blogpage = ({ title,data }) => {
   return (
     <section className={post_section}>
       {/* **********left */}
-      <article className={section1}>
-        <Blogpost title={title} data={data}/>
+      <article className={section1}> 
+        <Blogpost title={title} data={data}/> 
         {/* ----------------------------- */}
       </article>
       {/* ******************right*/}

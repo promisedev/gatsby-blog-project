@@ -10,7 +10,7 @@ import {post_section,
 image_image, video,content,social_share,share_wrap,social_icon,related_post,post_body,post_item} from "./styles/blogtem.module.css";
   import Popularpost from "./asidepost";
 import Videopost from "./asidepost1";
-import Ads from "./ads";
+import Ads from "./ads"; 
 import Ads1 from "./ads1";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { GatsbyImage,getImage } from "gatsby-plugin-image";
@@ -103,7 +103,7 @@ const options = {
           <span className={tag1}>Source: {source}</span>
           {/*  */}
           <span className={tag2}>
-            <AccessTimeIcon style={{ fontSize: "13px" }} /> {postedAt}
+            <AccessTimeIcon style={{ fontSize: "13px",marginRight:"4px" }} /> {postedAt}
           </span>
           {/*  */}
           <span className={tag3}>tag: {tag}</span>
@@ -111,7 +111,7 @@ const options = {
         {/* ------------display image----------------- */}
         <div className={image}>
           {type == "image article" ? (
-            <GatsbyImage
+            <GatsbyImage 
               image={pathToimage}
               alt={slug}
               className={image_image}
@@ -153,7 +153,7 @@ const options = {
                 style={{ color: "rgb(7, 106, 187)", fontSize: "20px" }}
               />
             </a>
-            {/* -- */}
+            {/* -- */} 
             <a
               href={`https://www.linkedin.com/shareArticle?url=${`http://localhost:8000/blogs/${slug}`}&title=${excerpt}`}
               className={social_icon}

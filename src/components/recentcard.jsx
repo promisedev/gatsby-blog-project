@@ -6,8 +6,8 @@ import {GatsbyImage,getImage} from "gatsby-plugin-image"
 
 const Recentcard =({data})=>{
 const date = data?.postedAt;
-const desc = data?.excerpt;
-const ecerpt = data?.shortDesc;
+const desc = data?.excerpt; 
+const ecerpt = data?.shortDesc
 const image = getImage(data?.media.gatsbyImage)
     return (
       <article className={recent_body}>

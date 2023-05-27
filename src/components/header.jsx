@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import {
   header,
   header_image,
@@ -7,10 +7,10 @@ import {
   header_page,
   header_drop,
   header_aside,
-  header_slide,
+  header_slide,show_nav,
   social_icon,
   header_slide_close,
-  nav_pages,nav_page,nav_subpages,nav_subpage
+  nav_pages,nav_page,nav_subpages,nav_subpage,sub,show_sub,icon_r,icon_rotate
 } from "./header.module.css";
 import pages from "../models/pages.json";
 import socials from '../models/socials.json'
@@ -58,7 +58,27 @@ let xy = Number(((right+left)/10).toFixed())
 const pageRemove=(e)=>{
     setDis("none")
   }
+const nav = useRef(null)
+const openMenu=()=>{
+  const myNav = nav.current;
+  myNav.classList.add(show_nav)
+}
+const closeMenu=()=>{
+ const myNav = nav.current;
+  myNav.classList.remove(show_nav) 
+}
 
+ const drop=(e)=>{
+  e.currentTarget.classList.toggle(`${icon_rotate}`)
+const ele = e.currentTarget.parentElement.parentElement.children[1]
+const len = ele.children.length
+//console.log(ele.children[0].children[0],len)
+
+for(let i=0; i<len; i++){
+  ele.children[i].children[0].classList.toggle(`${show_sub}`)
+}
+
+ }
  
   return (
     <header className={header}>
@@ -70,12 +90,12 @@ const pageRemove=(e)=>{
       {/* ------------------------------- */}
 
       <div className={header_drop}>
-        <IconButton>
-          <MenuIcon style={{ color: "#fff", fontSize: "40px" }} />
+        <IconButton onClick={openMenu} style={{ padding:"0px" }}>
+          <MenuIcon style={{ color: "#fff", fontSize: "40px", padding:"0px" }}  />
         </IconButton>
-        <nav className={header_slide}>
+        <nav className={header_slide} ref={nav}>
           <div className={header_slide_close}>
-            <IconButton>
+            <IconButton onClick={closeMenu}>
               <CloseIcon style={{ color: "#fff", fontSize: "40px" }} />
             </IconButton>
           </div>
@@ -85,14 +105,14 @@ const pageRemove=(e)=>{
               <li key={index} className={nav_page}>
                 {" "}
                 <Link to={`/${page.slug}`} data-id={page.name}>
-                  <span>{page.name}</span> {page.pages && <ArrowDropDown />}
+                <span>{page.name}</span> {page.pages && <ArrowDropDown onClick={drop} className={icon_r} style={{marginLeft:"30px"}}/>}
                 </Link>
                 {/* ------------------------------------------- */}
                 <ul className={nav_subpages}>
                   {page.pages?.map((page, index) => (
                     <li key={index} className={nav_subpage}>
                       {" "}
-                      <Link to={`/blogs/${page.slug}`}>{page.name}</Link>
+                      <Link to={`/blogs/${page.slug}`} className={sub}>{page.name}</Link>
                     </li>
                   ))}
                 </ul>

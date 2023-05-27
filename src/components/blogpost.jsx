@@ -96,7 +96,7 @@ window.scrollTo(0,position)
   }
 
   return (
-    <section className={post_body}>
+    <section className={post_body}> 
       <Title title={title} />
       {/* ----------------------------------- */}
       <article className={post_cont} ref={top}>
@@ -104,7 +104,7 @@ window.scrollTo(0,position)
          {seeking? (post1.map((post, index) => {
             return (
               <div className={post_card} key={index}>
-                <Recentawait />
+                <Recentawait /> 
               </div>
             );
           })):(postview?.map((post, index) => {
