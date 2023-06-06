@@ -21,7 +21,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import LinkedIcon from "@mui/icons-material/Linkedin";
+import LinkedIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { ArrowDropDown, Instagram } from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';

@@ -3,7 +3,7 @@ import pages from "../models/pages.json";
 import socials from "../models/socials.json";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import LinkedIcon from "@mui/icons-material/Linkedin";
+import LinkedIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Instagram } from "@mui/icons-material";
 
